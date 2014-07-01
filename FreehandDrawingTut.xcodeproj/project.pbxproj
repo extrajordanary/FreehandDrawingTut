@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		176E96071963659A0026504B /* LinearInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 176E96061963659A0026504B /* LinearInterpView.m */; };
+		176E960A19636C200026504B /* CachedLIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 176E960919636C200026504B /* CachedLIView.m */; };
+		176E960D19636DC50026504B /* BezierInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 176E960C19636DC50026504B /* BezierInterpView.m */; };
+		176E961019636F180026504B /* SmoothedBIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 176E960F19636F180026504B /* SmoothedBIView.m */; };
 		179FA8A119636260001DDEE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179FA8A019636260001DDEE7 /* Foundation.framework */; };
 		179FA8A319636260001DDEE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179FA8A219636260001DDEE7 /* CoreGraphics.framework */; };
 		179FA8A519636260001DDEE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179FA8A419636260001DDEE7 /* UIKit.framework */; };
@@ -35,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		176E96051963659A0026504B /* LinearInterpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearInterpView.h; sourceTree = "<group>"; };
+		176E96061963659A0026504B /* LinearInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearInterpView.m; sourceTree = "<group>"; };
+		176E960819636C200026504B /* CachedLIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedLIView.h; sourceTree = "<group>"; };
+		176E960919636C200026504B /* CachedLIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedLIView.m; sourceTree = "<group>"; };
+		176E960B19636DC50026504B /* BezierInterpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierInterpView.h; sourceTree = "<group>"; };
+		176E960C19636DC50026504B /* BezierInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierInterpView.m; sourceTree = "<group>"; };
+		176E960E19636F180026504B /* SmoothedBIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothedBIView.h; sourceTree = "<group>"; };
+		176E960F19636F180026504B /* SmoothedBIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmoothedBIView.m; sourceTree = "<group>"; };
 		179FA89D19636260001DDEE7 /* FreehandDrawingTut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreehandDrawingTut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179FA8A019636260001DDEE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		179FA8A219636260001DDEE7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,10 +126,18 @@
 		179FA8A619636260001DDEE7 /* FreehandDrawingTut */ = {
 			isa = PBXGroup;
 			children = (
+				176E96051963659A0026504B /* LinearInterpView.h */,
+				176E96061963659A0026504B /* LinearInterpView.m */,
+				176E960819636C200026504B /* CachedLIView.h */,
+				176E960919636C200026504B /* CachedLIView.m */,
 				179FA8AF19636260001DDEE7 /* AppDelegate.h */,
 				179FA8B019636260001DDEE7 /* AppDelegate.m */,
 				179FA8B219636260001DDEE7 /* Main_iPhone.storyboard */,
 				179FA8B519636260001DDEE7 /* Main_iPad.storyboard */,
+				176E960E19636F180026504B /* SmoothedBIView.h */,
+				176E960F19636F180026504B /* SmoothedBIView.m */,
+				176E960B19636DC50026504B /* BezierInterpView.h */,
+				176E960C19636DC50026504B /* BezierInterpView.m */,
 				179FA8B819636260001DDEE7 /* ViewController.h */,
 				179FA8B919636260001DDEE7 /* ViewController.m */,
 				179FA8BB19636260001DDEE7 /* Images.xcassets */,
@@ -254,8 +274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				179FA8BA19636260001DDEE7 /* ViewController.m in Sources */,
+				176E960A19636C200026504B /* CachedLIView.m in Sources */,
+				176E96071963659A0026504B /* LinearInterpView.m in Sources */,
 				179FA8B119636260001DDEE7 /* AppDelegate.m in Sources */,
 				179FA8AD19636260001DDEE7 /* main.m in Sources */,
+				176E960D19636DC50026504B /* BezierInterpView.m in Sources */,
+				176E961019636F180026504B /* SmoothedBIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +494,7 @@
 				179FA8D419636261001DDEE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		179FA8D519636261001DDEE7 /* Build configuration list for PBXNativeTarget "FreehandDrawingTutTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +503,7 @@
 				179FA8D719636261001DDEE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
